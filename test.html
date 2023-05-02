@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div class="headtag" id="responsive-headtag">
+        <span class="ayush-full">AYUSH CHERUVALLATHU JOY</span>
+        <p2>Design Management</p2>
+    </div>
+
+    <div class="menuelement">
+        <a href="about.html">about</a>
+        <a href="about.html#resume">resume</a>
+        <a href="about.html#contact">contact</a>
+    </div>
+
+    <div class="subtext">
+        <p>Ⓒ 2022 ayush cheruvallathu joy</p>
+        <p2>All rights reserved</p2>
+    </div>
+
+    <script>
+        // Get the span element
+        const span = document.querySelector('.ayush-full');
+
+        // Add an event listener for the window resize event
+        window.addEventListener('resize', () => {
+            // Check if the screen width is less than 70%
+            if (window.innerWidth < (window.screen.availWidth * 0.7)) {
+                // Set the span text to "AYUSH C JOY"
+                span.textContent = "AYUSH C JOY";
+            } else {
+                // Set the span text back to "AYUSH CHERUVALLATHU JOY"
+                span.textContent = "AYUSH CHERUVALLATHU JOY";
+            }
+        });
+    </script>
+
+</body>
+</html>

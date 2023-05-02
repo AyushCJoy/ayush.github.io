@@ -1,0 +1,496 @@
+body {
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 25%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #E6E6E6; /* Grey */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.logobox {
+  top:1%;
+  position: relative;
+  display: block;
+}
+
+.logo {
+  width:60%;
+  position:relative;
+  display: block;
+  left:20%;
+  margin-right:20%;
+  z-index:1;
+}
+
+
+.menuelement {
+  position: absolute;
+  top: 48%;
+  left: 25%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.headtag {
+  font-family:'Raleway Black',sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left:25%;
+  margin-right: 20%;
+  padding: 5px;
+}
+
+.headtag p2 {
+  font-family:'Raleway',sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+/* The navigation menu links */
+.menuelement a {
+  font-family:'Raleway Semibold',sans-serif;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight:600;
+  color: #272e64;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.menuelement a:hover {
+  color: #C2080C;
+}
+
+.subtext {
+  position: absolute;
+  top:80%;
+  margin-left:25%;
+  margin-right: 10%;
+  display: block;
+}
+
+.subtext p{
+  font-family:'Raleway Semibold',sans-serif;
+  font-size: 12px;
+  word-wrap: break-word;
+  margin-bottom: 1px;
+}
+
+.subtext p2{
+  font-family:'Raleway Semibold',sans-serif;
+  font-size: 8px;
+  position: relative;
+  top:70%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.linkedin {
+  position: absolute;
+  display: block;
+}
+
+
+/* Style page content */
+.main {
+  position: relative;
+  margin-left: 25%;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+.main div{
+  display: inline-block;
+}
+
+.about {
+   margin-left:5%;
+}
+
+.resume {
+   margin-left:5%;
+
+}
+
+.contact {
+margin-left:5%;
+}
+
+.maincontainer{
+  max-width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: max-content;
+}
+
+.resume {
+  margin-top: 10%;
+  position: relative;
+}
+
+.main h1{
+  font-family:'Raleway Semibold',sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  display: block;
+  margin-left: 5%;
+  position: relative;
+  color: #2A2C66;
+  letter-spacing: 1px;
+}
+
+
+.scrolling-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space:nowrap;
+  padding-bottom: 2%;
+}
+
+/*::-webkit-scrollbar {
+  width: 5%;
+}
+
+::-webkit-scrollbar-track {
+  background: blue;
+}
+*/
+
+.card {
+  width: 35%;
+  height: 50%;
+  background-color: white;
+  padding: 5px;
+  margin:1%;
+  position: relative;
+  white-space: normal;
+  -webkit-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  -moz-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  box-shadow: 2px 1px 4px 3px rgba(226,233,242,1);
+}
+
+.card img{
+  width:100%;
+}
+
+.card h2{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-size: 21px;
+  padding: 5px;
+  padding-right: 20%;
+  display: block;
+  color: #2A2C66;
+}
+
+.card p{
+  font-family:'Raleway',sans-serif;
+  font-size: 14px;
+  margin:5px;
+  display: inline block;
+  letter-spacing: 1px;
+}
+.scrolling-wrapper .card:first-child {
+  margin-left: 7%;
+}
+
+.scrolling-wrapper .card:last-child {
+  margin-right: 10%;
+}
+
+.about p1{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-size: 300%;
+  font-weight:600;
+  padding: 5px;
+  padding-right: 20%;
+  margin-top: 5%;
+  display: block;
+  color: #2A2C66;
+}
+
+.about p{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  padding-right: 20%;
+  display: block;
+}
+
+.about p4{
+  font-family:'Raleway',sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  padding-right: 20%;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.animdelta {
+  position: block;
+  margin-left: 2%;
+}
+.vl {
+  width: 0.5%; /* Line width */
+  background-color: #2A2C66; /* Line color */
+  height:100%; /* Override in-line if you want specific height. */
+  float: left;
+  left: 4%;
+  margin: 2%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.resume p{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  padding-right: 5%;
+  display: block;
+}
+
+.resume h1{
+  margin-left: 2%;
+}
+
+.resume p3{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 5px;
+  padding-right: 20%;
+  display: block;
+  color: #2A2C66;
+}
+
+.resume p2{
+  letter-spacing: 1px;
+  font-family:'Raleway',sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+  padding-right: 20%;
+  display: block;
+  color: #2A2C66;
+}
+
+.resume p4{
+  letter-spacing: 1px;
+  left: 2%;
+  font-family:'Raleway',sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+  display: block;
+  position: inherit;
+}
+
+.resume p5{
+  left: 2%;
+  font-family:'Raleway',sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight:500;
+  padding: 0.2%;
+  display: block;
+  position: inherit;
+}
+
+.blue{
+  color: #2A2C66;
+  font-style: italic;
+}
+
+.rbox {
+  width: 90%;
+  height: 50%;
+  background-color: white;
+  padding: 1%;
+  margin:1%;
+  position: relative;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  -moz-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  box-shadow: 2px 1px 4px 3px rgba(226,233,242,1);
+}
+
+.experience {
+  margin-top: 4%;
+  position: relative;
+}
+
+.rbox hr {
+  color: #2a2c663d;
+}
+
+.contact {
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 23%;
+}
+
+.contact h1{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 4%;
+}
+
+.contact a{
+  left: 2%;
+  font-family:'Raleway',sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  color: Black;
+  display: block;
+  position: inherit;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #C2080C;
+}
+
+.contact p5{
+  left: 2%;
+  font-family:'Raleway',sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight:500;
+  margin-right: 20%;
+  margin-top: 8%;
+  display: block;
+  position: inherit;
+}
+
+.contact.logobox {
+  top:1%;
+  position: relative;
+  display: block;
+}
+
+
+.menu.visible {
+  display: block;
+  z-index:2;
+}
+
+.headtag.visible {
+  display: block;
+}
+
+.subtext.visible {
+  display: block;
+}
+
+.linkedin.visible {
+  display: block;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 200px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media only screen and (max-width: 480px) {
+ .sidenav {
+  height: 23%; /* Full-height: remove this if you want "auto" height */
+  width: 100%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #E6E6E6; /* Grey */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  }
+
+ .main {
+  position:absolute;
+  margin-top: 50%;
+  /* left: 0; */
+  overflow: hidden;
+  margin-left: 0;
+  }
+
+ .menuelement {
+    position: absolute;
+    top: 49%;
+    left: 25%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .headtag {
+        display: none;
+  }
+
+  .linkedin {
+        display:none;
+  }
+
+  .subtext {
+        top: 65%;
+  }
+  
+  .hamburger {
+    display: flex;
+    z-index:2;
+    position: relative;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 10%;
+  }
+
+.maincontainer {
+    width:100%;
+}
+
+.card {
+  width: 60%;
+  height: 50%;
+  background-color: white;
+  padding: 5px;
+  margin:1%;
+  display: ;
+  position: relative;
+  white-space: normal;
+  -webkit-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  -moz-box-shadow: -2px 2px 2px 2px rgba(226,233,242,1);
+  box-shadow: 2px 1px 4px 3px rgba(226,233,242,1);
+}
+
+.resume {
+    padding-top:50%;
+}
+
+@media (min-width: 481px) {
+  .menu {
+    display: block;
+  }
+  
